@@ -50,9 +50,8 @@
 
         <nav id="navbar" class="navbar">
             <ul>
-
-                <li><a class="nav-link scrollto" href="#contact">Login</a></li>
-                <li><a class="getstarted scrollto" href="#about">Sign up</a></li>
+                <li><a class="nav-link scrollto" href="/login">Login</a></li>
+                <li><a class="getstarted scrollto" href="/register">Sign up</a></li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
         </nav><!-- .navbar -->

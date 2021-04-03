@@ -23,7 +23,7 @@ class sendAdminNotification implements ShouldQueue
      *
      * @return void
      */
-    public function __construct(User $user)
+    public function __construct(Object $user)
     {
         $this->user = $user;
         $this->recipier =  env('ADMIN_EMAIL', 'zhenyauk@gmail.com');

@@ -18,7 +18,7 @@ class newUserRegister extends Mailable
      *
      * @return void
      */
-    public function __construct(User $user)
+    public function __construct(Object $user)
     {
         $this->user = $user;
     }

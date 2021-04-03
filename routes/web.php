@@ -12,13 +12,17 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::redirect('/', 'register')->name('home');
+Route::redirect('/', 'contacts')->name('home');
 
 Route::view('/register', 'pages.auth.register')->name('register');
 Route::post('/register', 'Auth\\RegisterController@store')->name('register.store');
 
 Route::view('/login', 'pages.auth.login')->name('login');
 Route::post('/login', 'Auth\\LoginController@store')->name('login.store');
+
+Route::view('/contacts', 'pages.contacts.index')->name('contacts');
+Route::post('/contacts', 'ContactController@store')->name('contacts.store');
+
 
 
 Route::get('/logout', function (){
